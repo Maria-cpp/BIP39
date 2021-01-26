@@ -32,7 +32,7 @@
  */
 #include "sha256.h"
 #include "sha512.h"
-
+#include "iostream"
 template <typename T, size_t BLOCK_LEN, size_t RAW_BYTES_LEN>
 struct PBKDF2_CTX {
     std::array<T, RAW_BYTES_LEN / sizeof(T)> odig;

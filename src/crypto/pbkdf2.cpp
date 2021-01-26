@@ -207,6 +207,7 @@ template <>
 std::vector<uint8_t> hashPbkdf2<std::string>(
     Algo algo, const std::string& pass, const std::string& salt, uint32_t iterations, size_t outKeySize)
 {
+
     if (outKeySize <= 0) {
         return std::vector<uint8_t>();
     }

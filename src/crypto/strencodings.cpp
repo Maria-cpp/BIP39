@@ -67,9 +67,9 @@ int hexValue(char hex_digit)
 std::string base16Decode(const std::string &input)
 {
     const auto len = input.length();
-    if (len & 1) {
-        throw EncodingException{"base16Decode: Invalid length!"};
-    }
+//    if (len & 1) {
+//        throw EncodingException{"base16Decode: Invalid length!"};
+//    }
 
     std::string output;
     output.reserve(len / 2);
